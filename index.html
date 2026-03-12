@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+i<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nigeria Passport Application</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+<body>
+
+<div class="header">
+Federal Republic of Nigeria
+Passport Application Portal
+</div>
+
+<div class="container">
+
+<h2>Apply for Passport</h2>
+<form id="passportForm" action="http://public_ip_logic_tier_instance:5000/submit" method="POST">
+<label for="firstName">First Name</label>
+<input type="text" id="firstName" name="firstName">
+<span id="firstNameError" class="error"></span>
+
+<label for="lastName">Last Name</label>
+<input type="text" id="lastName" name="lastName">
+<span id="lastNameError" class="error"></span>
+
+<label for="dob">Date of Birth</label>
+<input type="date" id="dob" name="dob">
+<span id="dobError" class="error"></span>
+
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email">
+<span id="emailError" class="error"></span>
+
+<button type="submit">Submit Application</button>
+
+</form>
+
+<div class="footer">
+Nigeria Immigration Service
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+i</html>
